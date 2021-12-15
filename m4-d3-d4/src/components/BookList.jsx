@@ -9,6 +9,7 @@ class BookList extends Component {
         return (
             <>
                 <Container>
+                    <h4 className="text-center">Filter books:</h4>
                     <Form>
                         <Form.Group className="mb-3">
                             <Form.Control
