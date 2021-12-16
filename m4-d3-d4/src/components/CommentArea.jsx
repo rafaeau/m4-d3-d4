@@ -1,5 +1,5 @@
 import { Component } from 'react'
-import { ListGroup } from 'react-bootstrap'
+import CommentsList from './CommentsList'
 
 class CommentArea extends Component {
     state = {
@@ -26,13 +26,9 @@ class CommentArea extends Component {
 
     render() {
         return (
-                this.state.comments.map((comment) => (
-                <ListGroup key={this.props.asin}>
-                    <ListGroup.Item>{this.state.comments.comment}</ListGroup.Item>
-                    <ListGroup.Item>{this.state.comments.rate}</ListGroup.Item>
-                    <ListGroup.Item>{this.state.comments.elementId}</ListGroup.Item>
-                </ListGroup>
-            ))
+            <div>
+                <CommentsList comments={this.state.comments}/>
+            </div>
         )
     }
 }
