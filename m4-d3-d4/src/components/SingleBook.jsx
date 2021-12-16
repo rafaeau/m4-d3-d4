@@ -6,7 +6,7 @@ class SingleBook extends React.Component {
     state = {selected:false}
     render() {
         return (
-            <Col sm={6} md={4} lg={3}>
+            <Col md={6} lg={4}>
                 <Card
                 onClick = {() => this.setState({selected: !this.state.selected})}
                 style = {{border: this.state.selected ? "1px solid green" : "none"}}
